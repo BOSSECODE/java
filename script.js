@@ -44,7 +44,7 @@ function exercício_01(){
     }
     alert("A soma dos numeros é : " + soma);
 }
-somarnumeros();
+exercício_01();
 
 
 
@@ -64,7 +64,7 @@ function exercício_02(){
     alert("Lançamento realizado!");
 }
 
-lancamentoFoguete();
+exercício_02();
 
 
 function exercício_03(){
@@ -99,40 +99,112 @@ function exercício_03(){
     }
 }
 
-balancoEmpresa();
+exercício_03();
 
 
 function exercício_05(){
+        let numero = parseInt(prompt("Digite um número inteiro:"));
 
+    if(numero % 2 === 0){
+        console.log("O número é par.");
+        numero = numero + 1; // transforma em ímpar
+    }else{
+        console.log("O número é ímpar.");
+        numero = numero + 1; // transforma em par
+    }
+
+    console.log("Valor final: " + numero);
 }
+
+exercício_05();
+
 
 
 function exercício_06(){
+ let letra = prompt("Digite uma letra do alfabeto:");
+
+    letra = letra.toLowerCase();
+
+    if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+        console.log("A letra é uma vogal.");
+    }else{
+        console.log("A letra é uma consoante.");
+    }
 
 }
+
+exercício_06();
 
 
 function exercício_07(){
+        let codigo = prompt("Digite o código do sabor (a até i):");
+    codigo = codigo.toLowerCase();
+
+    if(codigo === "a"){
+        console.log("Sabor: Chocolate - Preço: R$ 1,50");
+    }else if(codigo === "b"){
+        console.log("Sabor: Morango - Preço: R$ 2,50");
+    }else if(codigo === "c"){
+        console.log("Sabor: Creme - Preço: R$ 2,50");
+    }else if(codigo === "d"){
+        console.log("Sabor: Manga - Preço: R$ 3,20");
+    }else if(codigo === "e"){
+        console.log("Sabor: Melancia - Preço: R$ 3,40");
+    }else if(codigo === "f"){
+        console.log("Sabor: Vanilla Ice - Preço: R$ 3,00");
+    }else if(codigo === "g"){
+        console.log("Sabor: Céu Azul - Preço: R$ 3,60");
+    }else if(codigo === "h"){
+        console.log("Sabor: Brownie - Preço: R$ 4,00");
+    }else if(codigo === "i"){
+        console.log("Sabor: Hawaiano - Preço: R$ 5,00");
+    }else{
+        console.log("Código inválido.");
+    }
 
 }
 
+exercício_07();
 
 
 function exercício_08(){
+         let num1 = 5;
+    let num2 = 3;
+
+    let diferenca = num1 - num2;
+    let resultado = (2 * num1) + (3 * num2);
+    let multiplicacao = num1 * num2;
+
+    console.log("Diferença entre as variáveis: " + diferenca);
+    console.log("Dobro da primeira + triplo da segunda: " + resultado);
+    console.log("Multiplicação das variáveis: " + multiplicacao);
 
 }
-
+exercício_08();
 
 function exercício_09(){
+           let num1 = 8;
+    let num2 = 5;
 
+    if(num1 > num2){
+        console.log(num1);
+        console.log(num2);
+    }else{
+        console.log(num2);
+        console.log(num1);
+    }
 }
 
+exercício_09();
 
 function exercício_10(){
 
 }   
 
+exercício_10();
 
 function exercício_11(){
 
 }
+
+exercício_11();
