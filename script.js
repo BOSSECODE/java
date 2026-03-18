@@ -199,11 +199,41 @@ exercício_09();
 
 function exercício_10(){
 
-}   
+    let nome = prompt("Digite o nome do funcionário:");
+    let salarioBruto = parseFloat(prompt("Digite o salário bruto:"));
+
+    let descontoINSS = salarioBruto * 0.08;
+    let salarioLiquido = salarioBruto - descontoINSS;
+
+    console.log("Nome do funcionário: " + nome);
+    console.log("Salário bruto: R$ " + salarioBruto.toFixed(2));
+    console.log("Desconto INSS (8%): R$ " + descontoINSS.toFixed(2));
+    console.log("Salário líquido: R$ " + salarioLiquido.toFixed(2));
+
+} 
 
 exercício_10();
 
 function exercício_11(){
+
+    let salario = parseFloat(prompt("Digite o salário bruto:"));
+    let taxa;
+    
+    if(salario <= 1000){
+        taxa = 0.08;
+    }else if(salario <= 1500){
+        taxa = 0.085;
+    }else{
+        taxa = 0.09;
+    }
+
+    let desconto = salario * taxa;
+    let salarioLiquido = salario - desconto;
+
+    console.log("Salário informado: R$ " + salario.toFixed(2));
+    console.log("Taxa de desconto: " + (taxa * 100) + "%");
+    console.log("Valor do desconto: R$ " + desconto.toFixed(2));
+    console.log("Salário líquido: R$ " + salarioLiquido.toFixed(2));
 
 }
 
